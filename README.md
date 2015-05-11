@@ -1,6 +1,8 @@
 # AVRLoader
 AVR Open Source Bootloader Programmer
 
+Open the raw file for the formatted text file.
+
 A Python port of the Atmel AVROSP application (application note AVR911).
 
 Since there seemed to be no Linux port of this application, it was decided
