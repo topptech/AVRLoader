@@ -7,22 +7,22 @@ Since there seemed to be no Linux port of this application, it was decided
 to implement a port to Python. 
 
 From Atmel:  
-  *The AVR Open Source Programmer (AVROSP) is an AVR programmer application  
-  *equivalent to the AVRProg tool included in AVR Studio. It is a  
-  *command-line tool, using the same syntax as the other command-line tools  
-  *in AVR Studio. The open source code and its modular design make  
-  *it easy to port the application to other platforms and to add support  
-  *for other programmer types and communication channels. Currently,  
-  *AVROSP supports the programmers described in AVR109 and AVR910  
-  *through the standard PC serial port. The application note describes how  
-  *to add more support. AVROSP reads and writes Intel HEX files, and  
-  *can use an existing AVR Studio installation to get required device  
-  *parameters. This means that AVROSP automatically supports all  
-  *devices supported by AVR Studio. No update is required for future AVR  
-  *devices other than keeping your AVR Studio installation up to date.  
+   The AVR Open Source Programmer (AVROSP) is an AVR programmer application  
+   equivalent to the AVRProg tool included in AVR Studio. It is a  
+   command-line tool, using the same syntax as the other command-line tools  
+   in AVR Studio. The open source code and its modular design make  
+   it easy to port the application to other platforms and to add support  
+   for other programmer types and communication channels. Currently,  
+   AVROSP supports the programmers described in AVR109 and AVR910  
+   through the standard PC serial port. The application note describes how  
+   to add more support. AVROSP reads and writes Intel HEX files, and  
+   can use an existing AVR Studio installation to get required device  
+   parameters. This means that AVROSP automatically supports all  
+   devices supported by AVR Studio. No update is required for future AVR  
+   devices other than keeping your AVR Studio installation up to date.  
   
-  *Q. How to use AVROSP without installing AVR Studio 4?  
-  *A. AVR911 uses XML files from AVR Studio when communicating with  
+   Q. How to use AVROSP without installing AVR Studio 4?  
+   A. AVR911 uses XML files from AVR Studio when communicating with  
       AVR109: Self Programming. The XMLfiles available with AVR Studio 5
       or later cannot be used with AVR911 because of a change in XML file
       format. This issue can be overcome by providing the XML files in a 
