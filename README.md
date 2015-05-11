@@ -6,7 +6,7 @@ A Python port of the Atmel AVROSP application (application note AVR911).
 Since there seemed to be no Linux port of this application, it was decided
 to implement a port to Python. 
 
-From Atmel: 
+From Atmel:  
    The AVR Open Source Programmer (AVROSP) is an AVR programmer application
    equivalent to the AVRProg tool included in AVR Studio. It is a 
    command-line tool, using the same syntax as the other command-line tools
