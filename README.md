@@ -100,4 +100,4 @@ section of avrloader.cfg file.
 Requires the pyserial Python module.  
   
 This code is implemented as bootloader mode only and tested with Python 2.7  
-on Ubuntu 12.04. Not tested on the Windows OS.  
+on Ubuntu 12.04. Not tested on Windows or Mac OS.  
