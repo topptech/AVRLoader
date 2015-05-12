@@ -1,47 +1,46 @@
 # AVRLoader
-AVR Open Source Bootloader Programmer
-
-A Python port of the Atmel AVROSP application (application note AVR911).
-
-Since there seemed to be no Linux port of this application, it was decided
-to implement a port to Python. 
-
-From Atmel:  
-   The AVR Open Source Programmer (AVROSP) is an AVR programmer application  
-   equivalent to the AVRProg tool included in AVR Studio. It is a  
-   command-line tool, using the same syntax as the other command-line tools  
-   in AVR Studio. The open source code and its modular design make  
-   it easy to port the application to other platforms and to add support  
-   for other programmer types and communication channels. Currently,  
-   AVROSP supports the programmers described in AVR109 and AVR910  
-   through the standard PC serial port. The application note describes how  
-   to add more support. AVROSP reads and writes Intel HEX files, and  
-   can use an existing AVR Studio installation to get required device  
-   parameters. This means that AVROSP automatically supports all  
-   devices supported by AVR Studio. No update is required for future AVR  
-   devices other than keeping your AVR Studio installation up to date.  
+AVR Open Source Bootloader Programmer  
   
-   Q. How to use AVROSP without installing AVR Studio 4?  
-   A. AVR911 uses XML files from AVR Studio when communicating with  
-      AVR109: Self Programming. The XMLfiles available with AVR Studio 5  
-      or later cannot be used with AVR911 because of a change in XML file  
-      format. This issue can be overcome by providing the XML files in a  
-      folder and modifying the search path in AVR911. The attached zip file  
-      contains XML files that come with AVR Studio 4.19 build 730. This can  
-      be downloaded and extracted to a folder and provide the path to the  
-      extracted folder as the XML search path in AVR911. Download and extract  
+A Python port of the Atmel AVROSP application (application note AVR911).  
+
+There seemed to be no Linux port of this application, so it was ported 
+to Python. 
+  
+### Atmel Documentation  
+>   The AVR Open Source Programmer (AVROSP) is an AVR programmer application 
+   equivalent to the AVRProg tool included in AVR Studio. It is a 
+   command-line tool, using the same syntax as the other command-line tools 
+   in AVR Studio. The open source code and its modular design make 
+   it easy to port the application to other platforms and to add support 
+   for other programmer types and communication channels. Currently, 
+   AVROSP supports the programmers described in AVR109 and AVR910 
+   through the standard PC serial port. The application note describes how 
+   to add more support. AVROSP reads and writes Intel HEX files, and 
+   can use an existing AVR Studio installation to get required device 
+   parameters. This means that AVROSP automatically supports all 
+   devices supported by AVR Studio. No update is required for future AVR 
+   devices other than keeping your AVR Studio installation up to date. 
+  
+>   Q. How to use AVROSP without installing AVR Studio 4?  
+>   A. AVR911 uses XML files from AVR Studio when communicating with 
+      AVR109: Self Programming. The XML files available with AVR Studio 5 
+      or later cannot be used with AVR911 because of a change in XML file 
+      format. This issue can be overcome by providing the XML files in a 
+      folder and modifying the search path in AVR911. The attached zip file 
+      contains XML files that come with AVR Studio 4.19 build 730. This can 
+      be downloaded and extracted to a folder and provide the path to the 
+      extracted folder as the XML search path in AVR911. Download and extract 
       AVR911 zip file from http://www.atmel.com/Images/AVR911.zip...  
      
-The XML file path is specified with the def_path variable in the Devices  
-section of avrloader.cfg file.  
-
+### Command Line  
+  
 Command Line Switches:  
-        [-d device name] [--if infile] [--ie infile] [--of outfile]  
-        [--oe outfile] [-s] [-O index] [--O# value] [--Sf addr] [--Se addr]  
-        [-e] [--p[f|e|b]] [--r[f|e|b]] [--v[f|e|b]] [-l value] [-L value]  
-        [-y] [-f value] [-E value] [-F value] [-G value] [-q] [-x value]  
-        [--af start:stop] [--ae start:stop] [-c port] [-b h|s] [-g] [-z]  
-        [-Y] [-n] [-h|?]  
+    [-d device name] [--if infile] [--ie infile] [--of outfile]  
+    [--oe outfile] [-s] [-O index] [--O# value] [--Sf addr] [--Se addr]  
+    [-e] [--p[f|e|b]] [--r[f|e|b]] [--v[f|e|b]] [-l value] [-L value]  
+    [-y] [-f value] [-E value] [-F value] [-G value] [-q] [-x value]  
+    [--af start:stop] [--ae start:stop] [-c port] [-b h|s] [-g] [-z]  
+    [-Y] [-n] [-h|?]  
    
 Parameters:  
 -d      Device name. Must be applied when programming the device.  
@@ -93,7 +92,12 @@ Parameters:
         this option to avoid the characters used for the indicator.  
 -h|-?   Help information (overrides all other settings).  
    
-This code is implemented as bootloader mode only and tested with Python 2.7  
-on Ubuntu 12.04. Not tested on the Windows OS.  
+### Execution Details  
+  
+The XML file path is specified with the def_path variable in the Devices  
+section of avrloader.cfg file.  
    
 Requires the pyserial Python module.  
+  
+This code is implemented as bootloader mode only and tested with Python 2.7  
+on Ubuntu 12.04. Not tested on the Windows OS.  
