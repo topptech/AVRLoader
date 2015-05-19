@@ -30,7 +30,7 @@ to Python.
       contains XML files that come with AVR Studio 4.19 build 730. This can 
       be downloaded and extracted to a folder and provide the path to the 
       extracted folder as the XML search path in AVR911. Download and extract 
-      AVR911 zip file from http://www.atmel.com/Images/AVR911.zip...  
+      AVR911 zip file from http://atmel.force.com/support/servlet/fileField?id=0BEG0000000HRr8...  
      
 ### Command Line  
   
