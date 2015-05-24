@@ -33,7 +33,8 @@ to Python.
       AVR911 zip file from http://atmel.force.com/support/servlet/fileField?id=0BEG0000000HRr8...  
      
 ### Command Line  
-  
+
+```  
 Command Line Switches:  
     [-d device name] [--if infile] [--ie infile] [--of outfile]  
     [--oe outfile] [-s] [-O index] [--O# value] [--Sf addr] [--Se addr]  
@@ -41,7 +42,7 @@ Command Line Switches:
     [-y] [-f value] [-E value] [-F value] [-G value] [-q] [-x value]  
     [--af start:stop] [--ae start:stop] [-c port] [-b h|s] [-g] [-z]  
     [-Y] [-n] [-h|?]  
-   
+
 Parameters:  
 -d      Device name. Must be applied when programming the device.  
 --if    Name of FLASH input file. Required for programming or verification  
@@ -91,7 +92,7 @@ Parameters:
 -Y      Calibrate internal RC oscillator(AVR057). 'addr' is byte address  
         this option to avoid the characters used for the indicator.  
 -h|-?   Help information (overrides all other settings).  
-   
+```   
 ### Execution Details  
   
 The XML file path is specified with the def_path variable in the Devices  
